@@ -74,7 +74,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {   
-                        sh 'docker tag tetrisv1 avian19/tetrisv1:${BUILD_NUMBER}'
+                        sh 'docker tag tetrisv1 monydocker1234/tetrisv1:${BUILD_NUMBER}'
                         sh 'docker push monydocker1234/tetrisv1:${BUILD_NUMBER}'
                     }
                 }
